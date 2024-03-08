@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <form id="" >
+            <h1> Runway Itinerary Form</h1> <br>
+
+            <label for="enterName">Enter Name</label>
+            <input type="text" id="enterName" placeholder="Enter your Name">
+            <p id="nameError" class="error"></p>
+
+
+            <label for="typeOfTrip">Trip type</label>
+            <select id="typeOfTrip" name="tripType">
+                <option value=""></option> 
+                <option id="oneWay" value="oneWay">One Way Trip</option>
+                <option id="roundTrip" value="roundTrip">Round Trip</option>
+            </select>
+            <p id="tripTypeError" class="error"></p>
+
+            <label for="typoeOfClass">Trip Class</label>
+            <select id="typeOfClass" name="tripType">
+                <option value=""></option> 
+                <option value="economy">Economy</option>
+                <option value="premium">Premium Class</option>
+            </select>
+            <p id="tripClassError" class="error"></p>
+            
+            <label for="travelFrom">Travelling From</label>
+            <select id="travelFrom" name="travelFrom">
+                <option value=""></option> 
+                <option id="sanJuan" value="sanJuan">San Juan</option>
+                <option id="sanFernando" value="sanFernando">San Fernando</option>
+                <option id="baguio" value="baguio">Baguio</option>
+                <option id="ilocosSur" value="ilocosSur">Ilocos Sur</option>
+                <option id="ilocosNorte" value="ilocosNorte">Ilocos Norte</option>
+                <option id="hundredIsland" value="hundredIsland">Hundred Island</option> 
+            </select>
+            <p id="TravellingFromError" class="error"></p>
+
+            <label for="travelTo">Travelling To</label>
+            <select id="travelTo" name="travelTo">
+                <option value=""></option> 
+                <option id="sanJuan" value="possibility1">San Juan</option>
+                <option id="sanFernando" value="sanFernando">San Fernando</option>
+                <option id="baguio" value="baguio">Baguio</option>
+                <option id="ilocosSur" value="ilocosSur">Ilocos Sur</option>
+                <option id="ilocosNorte" value="ilocosNorte">Ilocos Norte</option>
+                <option id="hundredIsland" value="hundredIsland">Hundred Island</option>  
+            </select>
+            <p id="travelToError" class="error"></p>
+
+            
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="date" id="dob" name="dateOfBirth">
+            <p id="dobError" class="error"></p>  <br> 
+            
+
+            <label for="departureDate">Departure Date</label>
+            <input type="datetime-local" id="departureDate" name="datetime">
+            <p id="departureDateError" class="error"></p>  <br> 
+
+            <label for="returnDate">Return Date</label>
+            <input type="datetime-local" id="returnDate" name="datetime">
+            <p id="returnDateError" class="error"></p>
+
+            <div id="afterSubmit">
+                <div id="afterSubmitone">
+                    <ul id="mylist"></ul>
+                </div>
+            </div>
+           
+            <div class="form-button">
+            <button onclick="validateForm()" type="button">Submit</button>
+            </div>
+       
+        </form>
+
+    </div>
+
+
+    <script src="trainbooking.js"></script>
+</body>
+</html>
